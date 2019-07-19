@@ -1,14 +1,17 @@
-import React, {Component} from "react";
+import React from "react";
 import "./style.css";
 
-class Card extends Component {
-    state = {
-        name: "",
-        src: ""
-    }
-    render() {
-      return (<div className="card"><img src={this.state.src} alt={this.state.name}/> </div>);
-    }
+
+
+export function Container({ children }) {
+  return <ul className="container">{children}</ul>;
 }
 
-export default Card;
+export function Card(props) {
+
+  return (
+    <div className="card">
+      <img src={props.sprite} alt={props.name} Key={props.id}/>
+    </div>
+  );
+}

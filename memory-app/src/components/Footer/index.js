@@ -3,7 +3,7 @@ import "./style.css";
 
 class Footer extends Component {
     render() {
-        return (<div className="footer">Footer</div>);
+        return (<div className="footer">Click the pic but don't click twice.</div>);
     }
 }
 
