@@ -1,5 +1,5 @@
 import React from "react";
-
+// import Card  from "./components/Card";
 // import "./style.css";
 
 
@@ -19,9 +19,8 @@ class Counter extends React.Component {
         }
     }
 
-    render(props) {
-        return (
-            <div />
+    render() {
+        return (<div></div>
         )
     }
 }

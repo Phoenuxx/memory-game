@@ -11,7 +11,7 @@ export function Card(props) {
 
   return (
     <div className="card">
-      <img src={props.sprite} alt={props.name} Key={props.id}/>
+      <img src={props.sprite} alt={props.name} Key={props.id} onClick={props.buttonClick} />
     </div>
   );
 }
